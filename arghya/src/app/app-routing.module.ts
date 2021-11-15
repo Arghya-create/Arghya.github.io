@@ -7,7 +7,8 @@ import { SnapsComponent } from './snaps/snaps.component';
 const routes: Routes = [
 {path:'profile',component:ProfileComponent},
 {path:'projects',component:ProjectsComponent},
-{path:'snaps',component:SnapsComponent}
+{path:'snaps',component:SnapsComponent},
+{path:'',component:ProfileComponent}
 ];
 
 @NgModule({

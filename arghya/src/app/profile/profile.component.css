@@ -154,14 +154,16 @@ section{
     font-size: 16px;
 }
 .social-icons{
-    padding: 10px 0px;
+    padding: 5px;
 }
 .social-icons a{
     display: inline-block;
-    width: 27px;
-    height: 27px;
+    width: 30px;
+    height: 30px;
     margin: 5px;
     text-align: center;
+    vertical-align: middle;
+    padding-top: 5px;
     background: #262626;
     color: #fff;
     text-decoration: none;
