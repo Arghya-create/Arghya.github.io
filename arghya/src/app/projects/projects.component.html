@@ -1,1 +1,81 @@
-<p>projects works!</p>
+<div class="projects">
+  <div class="container">
+    <div class="card ">
+      <div class="front">
+        <img src="../../assets/AQUA.jpg" alt="Me">
+        <h5><span>CMA_CGM AQUA</span></h5>
+        <span>My first project in Infosys as a UI developer</span>
+      </div>
+      <div class="back">
+        <div class="details">
+          <button class="viewmore" type="submit" (click)="viewDetails('aqua')">View More</button>
+        </div>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="front">
+        <img src="../../assets/server_client.jpg" alt="Me">
+        <h5><span>Server-Client RMI</span></h5>
+        <span>A simple Server-Client RMI application with chat and command utility</span>
+      </div>
+      <div class="back">
+        <div class="details">
+          <button class="viewmore" type="submit" (click)="viewDetails('rmi')">View More</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="front">
+        <img src="../../assets/autobot.jpg" alt="Me">
+        <h5><span>Automated BOT</span></h5>
+        <span>Fully Automated vehicle bot with multi-functionality</span>
+      </div>
+      <div class="back">
+        <div class="details">
+          <button class="viewmore" type="submit" (click)="viewDetails('autobot')">View More</button>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="card col-md-4">
+    <div class="front">
+      <img src="../../assets/AQUA.jpg" alt="Me">
+      <h5><span>AQUA</span></h5>
+      <span class="details">My first project in Infosys as a UI developer</span>
+    </div>
+    <div class="back">
+      <div class="details">
+      </div>
+    </div>
+  </div> -->
+  </div>
+</div>
+<div class="view" *ngIf="this.project=='aqua'">
+  <button class="cross" (click)="viewDetails('')">&times;</button>
+  <div class="view-details">
+    <h6>CMA-CGM AQUA</h6>
+
+    <p>sfsfsf</p>
+    <span>Will be writing Tommorow
+    </span>
+  </div>
+</div>
+<div class="view" *ngIf="this.project=='rmi'">
+  <button class="cross" (click)="viewDetails('')">&times;</button>
+  <div class="view-details">
+    <h6>Server-Client RMI</h6>
+
+    <p>sfsfsf</p>
+    <span>Will be writing Tommorow
+    </span>
+  </div>
+</div>
+<div class="view" *ngIf="this.project=='autobot'">
+  <button class="cross" (click)="viewDetails('')">&times;</button>
+  <div class="view-details">
+    <h6>Automated BOT</h6>
+
+    <p>sfsfsf</p>
+    <span>Will be writing Tommorow
+    </span>
+  </div>
+</div>
