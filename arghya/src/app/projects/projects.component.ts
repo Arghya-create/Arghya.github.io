@@ -13,7 +13,7 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
   }
   viewDetails(val: string) {
-    console.log("value",val);
+    console.log("value", val);
     this.project = val;
   }
 

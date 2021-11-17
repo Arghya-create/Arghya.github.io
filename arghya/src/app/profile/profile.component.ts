@@ -11,5 +11,9 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  change() {
+    const elements = document.querySelector("div.shadow");
+    elements?.classList.toggle("transformed");
+  }
 
 }

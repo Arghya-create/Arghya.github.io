@@ -8,7 +8,13 @@
       </div>
       <div class="back">
         <div class="details">
-          <button class="viewmore" type="submit" (click)="viewDetails('aqua')">View More</button>
+          <a (click)="viewDetails('aqua')">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            View More
+          </a>
         </div>
       </div>
     </div>
@@ -20,7 +26,13 @@
       </div>
       <div class="back">
         <div class="details">
-          <button class="viewmore" type="submit" (click)="viewDetails('rmi')">View More</button>
+          <a (click)="viewDetails('rmi')">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            View More
+          </a>
         </div>
       </div>
     </div>
@@ -32,29 +44,22 @@
       </div>
       <div class="back">
         <div class="details">
-          <button class="viewmore" type="submit" (click)="viewDetails('autobot')">View More</button>
+          <a (click)="viewDetails('autobot')">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            View More
+          </a>
         </div>
       </div>
     </div>
-    <!-- <div class="card col-md-4">
-    <div class="front">
-      <img src="../../assets/AQUA.jpg" alt="Me">
-      <h5><span>AQUA</span></h5>
-      <span class="details">My first project in Infosys as a UI developer</span>
-    </div>
-    <div class="back">
-      <div class="details">
-      </div>
-    </div>
-  </div> -->
   </div>
 </div>
 <div class="view" *ngIf="this.project=='aqua'">
   <button class="cross" (click)="viewDetails('')">&times;</button>
   <div class="view-details">
     <h6>CMA-CGM AQUA</h6>
-
-    <p>sfsfsf</p>
     <span>Will be writing Tommorow
     </span>
   </div>
@@ -63,8 +68,6 @@
   <button class="cross" (click)="viewDetails('')">&times;</button>
   <div class="view-details">
     <h6>Server-Client RMI</h6>
-
-    <p>sfsfsf</p>
     <span>Will be writing Tommorow
     </span>
   </div>
@@ -73,8 +76,6 @@
   <button class="cross" (click)="viewDetails('')">&times;</button>
   <div class="view-details">
     <h6>Automated BOT</h6>
-
-    <p>sfsfsf</p>
     <span>Will be writing Tommorow
     </span>
   </div>
