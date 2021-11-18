@@ -314,7 +314,7 @@ section {
   background: none;
   filter: none;
   transition-property: height width left transform background filter;
-  transition-duration: 0.2s;
+  transition-duration: 0.8s;
   transition-delay: 0.2;
 }
 
@@ -329,6 +329,3 @@ section {
   transition-duration: 0.5s;
   transition-delay: 1s;
 }
-/* .delay {
-  transition-delay: 1s;
-} */

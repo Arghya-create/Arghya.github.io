@@ -1,4 +1,10 @@
+<section>
+</section>
 <div class="projects">
+  <div class="head">
+    <h3>PROJECTS</h3>
+  </div>
+
   <div class="container">
     <div class="card ">
       <div class="front">
@@ -54,29 +60,66 @@
         </div>
       </div>
     </div>
+
   </div>
 </div>
 <div class="view" *ngIf="this.project=='aqua'">
   <button class="cross" (click)="viewDetails('')">&times;</button>
   <div class="view-details">
-    <h6>CMA-CGM AQUA</h6>
-    <span>Will be writing Tommorow
+    <h5>CMA-CGM AQUA</h5>
+    <span>AQUA - is a web application which is used to generate invoice bills for shipment orders according to the
+      country & currency of the country and the demand of the goods. These goods will be transported in bulk from one
+      Liner company to other Liner company. So all various cost will be generated using the application accordingly.
     </span>
+    <hr>
+    <div class="sub-details">
+      <strong>Company : </strong><span>Infosys Ltd.</span><br>
+      <strong>Company (Client) : </strong><span>CMA-CGM</span><br>
+      <strong>Trained on : </strong><span>MEAN Stack | Full stack ( Mongo-DB, Express.js, Angular JS, Node.js
+        )</span><br>
+      <strong>Specialised on : </strong><span>UI Development</span><br>
+      <strong>Tools and Softwares : </strong><span>GitLab, Sonar Qube, Zenkins, Zscaler, VS-Code, Jira, ALM</span><br>
+    </div>
   </div>
 </div>
 <div class="view" *ngIf="this.project=='rmi'">
   <button class="cross" (click)="viewDetails('')">&times;</button>
   <div class="view-details">
-    <h6>Server-Client RMI</h6>
-    <span>Will be writing Tommorow
+    <h5>Server-Client RMI</h5>
+    <span>A simple Server-Client application using RMI ( Remote Methode Invokation ). It was a course for Core JAVA, I
+      opted it when I was in first year of my college.<br>
+      Featues : <br>
+      • Chat application<br>
+      • Server's control over clients using RMI (Command Utility)<br>
+      • Message broadcasting<br>
     </span>
+    <hr>
+    <div class="sub-details">
+      <strong>Domain : </strong><span>Software Development</span><br>
+      <strong>Course : </strong><span>Core JAVA</span><br>
+      <strong>Institute : </strong><span>MTA Education, Aspievision Tech pvt. ltd., Kolkata </span><br>
+      <strong>Tools and Softwares : </strong><span>JAVA, Netbeans</span><br>
+      <strong>Project reference and link : </strong><a href="https://github.com/Arghya-create/Sever-client-"
+        rel="noopener noreferrer" target="_blank" aria-label="project">Click Here</a>
+    </div>
   </div>
 </div>
 <div class="view" *ngIf="this.project=='autobot'">
   <button class="cross" (click)="viewDetails('')">&times;</button>
   <div class="view-details">
-    <h6>Automated BOT</h6>
-    <span>Will be writing Tommorow
+    <h5>Automated BOT</h5>
+    <span>I made a bot in the form of a car with multi features.<br>
+      Features : <br>
+      • Automated movement for obstacle avoidance<br>
+      • Human follower. It will follow my hand using IR<br>
+      • Line follower. It can follow any type of line you draw<br>
+      • Manual control via Bluetooth<br>
+      • Miniature parking alarm.<br>
     </span>
+    <hr>
+    <div class="sub-details">
+      <strong>Technology : </strong><span>Internet of Things (IoT)</span><br>
+      <strong>Tools and Softwares : </strong><span>Arduino UNO, Arduino IDE, Sensors</span><br>
+    </div>
   </div>
 </div>
