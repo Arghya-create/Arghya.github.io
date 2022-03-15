@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SnapsComponent } from './snaps/snaps.component';
+import { CvComponent } from './cv/cv.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { SnapsComponent } from './snaps/snaps.component';
     ProfileComponent,
     ProjectsComponent,
     SnapsComponent,
+    CvComponent,
     
   ],
   imports: [

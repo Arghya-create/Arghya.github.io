@@ -21,6 +21,27 @@ nav{
     margin-top: 5px;
     margin-bottom: -14px;
 }
+@media screen and (min-width:0px) and (max-width:957px){
+    .footer{
+        display: none;
+    }
+    #footer{
+        bottom: 0;
+        text-align: center;
+        color: #000;
+        background: aliceblue;
+        border-radius: 60% 60% 0 0;
+    }
+    #copyright{
+        font-size: 15px;
+        margin-bottom: -14px;
+    }
+}
+@media screen and (min-width:957px){
+    #footer{
+        display: none;
+    }
+}
 .clock{
     height: 10vh;
     width: 30%;

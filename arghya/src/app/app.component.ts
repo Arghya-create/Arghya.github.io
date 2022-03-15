@@ -8,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   ngOnInit(): void {
     window.setInterval(this.updateClock, 1);
+    
   }
   title = 'arghya';
+
+  // showClock(){
+  //   if(window.innerWidth<950){
+  //     document.getElementsByClassName('clock')
+  //   }
+  // }
 
   updateClock() {
     var now = new Date();
@@ -25,6 +32,13 @@ export class AppComponent implements OnInit {
       if(now.getHours()==0){
         hou = '12';
       }
+      if(now.getHours()>12){
+        if(now.getHours()<10){
+          hou='0'+(now.getHours()-12).toString();
+        }
+        hou=(now.getHours()-12).toString();
+        pe="PM";
+      }
       if(now.getHours()<10){
         hou='0'+now.getHours().toString();
       }
@@ -34,10 +48,7 @@ export class AppComponent implements OnInit {
       if(now.getSeconds()<10){
         sec='0'+now.getSeconds().toString();
       }
-      if(now.getHours()>12){
-        hou=(now.getHours()-12).toString();
-        pe="PM";
-      }
+     
 
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
